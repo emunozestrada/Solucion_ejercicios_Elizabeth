@@ -1,29 +1,17 @@
-package solucionEjercicios;
+package solucion.ejercicios.uno;
+
 import java.util.Scanner;
 
-public class ejercicioUno {
-
-    public static double sumaUsuario(double n1, double n2){
-        return n1 + n2;
-
-    }
-    public static double restaUsuario(double n1, double n2){
-        return n1 - n2;
-
-    }
-    public static double multiplicacionUsuario(double n1, double n2){
-        return n1 * n2;
-
-    }
-    public static double divisionUsuario(double n1, double n2){
-        return n1 / n2;
-
-    }
+// Sugerencia: Las clases debería tener la primera letra en mayúscula
+public class EjercicioUno {
 
     public static void main(String[] args) {
 
+        Operaciones operaciones = new Operaciones();
+
         //Operaciones con dos números solicitados al usuario:
         Scanner lector = new Scanner(System.in);
+
 
         double n1, n2;
         int opc;
@@ -41,13 +29,13 @@ public class ejercicioUno {
         opc = lector.nextInt();
 
         if(opc == 1){
-            System.out.println("La suma es: " + sumaUsuario(n1, n2));
+            System.out.println("La suma es: " + operaciones.sumaUsuario(n1, n2));
         } else if(opc == 2){
-            System.out.println("La resta es: " + restaUsuario(n1, n2));
+            System.out.println("La resta es: " + operaciones.restaUsuario(n1, n2));
         }else if(opc == 3){
-            System.out.println("La multiplicación es: " + multiplicacionUsuario(n1, n2));
+            System.out.println("La multiplicación es: " + operaciones.multiplicacionUsuario(n1, n2));
         }else if (opc == 4){
-            System.out.println("La división es: " + divisionUsuario(n1, n2));
+            System.out.println("La división es: " + operaciones.divisionUsuario(n1, n2));
         }else{
             System.out.println("Ingresó una opción no válida");
         }
@@ -150,7 +138,6 @@ public class ejercicioUno {
 
         double moduloCuatro = numeroA % numeroF;
         System.out.println("El módulo de los números A y F es: " + moduloCuatro);
-
 
     }
 }
