@@ -28,11 +28,9 @@ public class ejercicioCinco {
         int opc;
         boolean continuar = true;
 
-        System.out.println("Ingresa el primer numero: ");
-        num1 = lector.nextDouble();
+        num1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el primer número:"));
+        num2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el segundo número:"));
 
-        System.out.println("Ingresa el segundo numero: ");
-        num2 = lector.nextDouble();
 
         do{
             System.out.println("\n1. suma");
