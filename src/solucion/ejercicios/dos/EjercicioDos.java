@@ -1,8 +1,8 @@
-package solucionEjercicios;
+package solucion.ejercicios.dos;
 
 import java.util.Scanner;
 
-public class ejercicioDos {
+public class EjercicioDos {
 
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
