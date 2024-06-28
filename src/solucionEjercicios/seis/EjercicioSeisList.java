@@ -34,18 +34,28 @@ public class EjercicioSeisList {
 
     public static void menu(int opcion) {
         switch (opcion) {
-            case 1 -> calculosAlumnos.agregarAlumno();
-            case 2 -> {
+            case 1:
+                calculosAlumnos.agregarAlumno();
+                break;
+            case 2:
                 calculosAlumnos.showAlumnos();
                 JOptionPane.showMessageDialog(null, "Ahora con toString()");
                 calculosAlumnos.showAlumnosString();
-            }
-            case 3 -> calculosAlumnos.listAlumnos();
-            case 4 -> JOptionPane.showMessageDialog(
-                    null, "El promedio del grupo es: " + calculosAlumnos.promedio()
-            );
-            case 5 -> JOptionPane.showMessageDialog(null, "Gracias por usar el programa");
-            default -> System.out.println("No seleccionó una opción valida");
+                break;
+            case 3:
+                calculosAlumnos.listAlumnos();
+                break;
+            case 4:
+                JOptionPane.showMessageDialog(
+                        null, "El promedio del grupo es: " + calculosAlumnos.promedio()
+                );
+                break;
+            case 5:
+                JOptionPane.showMessageDialog(null, "Gracias por usar el programa");
+                break;
+            default:
+                System.out.println("No seleccionó una opción valida");
+                break;
         }
     }
 
