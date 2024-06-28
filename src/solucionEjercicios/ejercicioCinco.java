@@ -59,6 +59,7 @@ public class ejercicioCinco {
                 } else if (opc == 5) {
                     continuar = false;
                 } else {
+                    JOptionPane.showMessageDialog(null, "Opción no válida. Por favor, elija una opción del 1 al 5." );
                     System.out.println("Opción no válida. Por favor, elija una opción del 1 al 5.");
                 }
             } catch (Exception e) {
