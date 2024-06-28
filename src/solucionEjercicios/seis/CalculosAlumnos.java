@@ -1,4 +1,6 @@
-package solucionEjercicios;
+package solucionEjercicios.seis;
+
+import solucionEjercicios.seis.Alumno;
 
 import javax.swing.*;
 

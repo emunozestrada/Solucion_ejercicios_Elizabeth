@@ -1,21 +1,17 @@
-package solucionEjercicios;
+package solucionEjercicios.seis;
+
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class EjercicioSeis {
+public class EjercicioSeisList {
 
-    static CalculosAlumnos calculosAlumnos;
+    static CalculosAlumnosList calculosAlumnos;
 
     public static void main(String[] args) {
-        Scanner lector = new Scanner(System.in);
-        List<Alumno> list = new ArrayList<>();
         int opcion = -1;
-        int length = Integer.parseInt(JOptionPane.showInputDialog(
-                null, "Ingrese la cántidad de alumnos"
-        ));;
-        calculosAlumnos = new CalculosAlumnos(length);
+        calculosAlumnos = new CalculosAlumnosList();
         do {
             try {
                 opcion = Integer.parseInt(
@@ -38,7 +34,7 @@ public class EjercicioSeis {
 
     public static void menu(int opcion) {
         switch (opcion) {
-            case 1 -> calculosAlumnos.agregarAlumnos();
+            case 1 -> calculosAlumnos.agregarAlumno();
             case 2 -> {
                 calculosAlumnos.showAlumnos();
                 JOptionPane.showMessageDialog(null, "Ahora con toString()");
